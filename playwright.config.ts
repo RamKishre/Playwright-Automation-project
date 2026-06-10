@@ -3,19 +3,22 @@ import { defineConfig, devices } from '@playwright/test';
 export default defineConfig({
   testDir: './tests',
 
-  fullyParallel: true,
+  fullyParallel: false,
 
   forbidOnly: !!process.env.CI,
 
   retries: process.env.CI ? 2 : 0,
 
-  workers: process.env.CI ? 1 : undefined,
+  workers: 1,
 
   reporter: 'html',
+ use: {
+  trace: 'on-first-retry',
 
-  use: {
-    trace: 'on-first-retry',
+  launchOptions: {
+   slowMo: 2000,
   },
+},
 
   projects: [
     {
