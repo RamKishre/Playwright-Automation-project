@@ -69,7 +69,7 @@ Playwright-Automation-project
 
 ## External Test Data
 
- project uses external JSON data for test credential management.
+ The project uses external JSON data for test credential management.
 
 Location:
 
@@ -87,7 +87,7 @@ Test cases are organized according to their functionality.
 
 * `login.spec.ts` contains login-related scenarios such as valid login , invalid login etc.
 * `cart.spec.ts` contains cart-related scenarios such as adding item , removing item etc.
-* `navigation.spec.ts` contains navigation-related scenarios such are moving from proudct page to cart page and from their to logout page etc.
+* `navigation.spec.ts` contains navigation-related scenarios such are moving from product page to cart page and from there to logout page etc.
 
 This modular structure improves readability, maintainability, debugging, and project scalability.
 
